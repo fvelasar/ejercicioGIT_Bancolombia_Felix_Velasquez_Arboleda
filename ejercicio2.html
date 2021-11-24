@@ -1,0 +1,39 @@
+<html>  
+    <head>
+    <script>
+        
+//let inicio = [345672,5433,22,9,221,23,"q",33,false,"s".true]        
+//let inicio = [32,325,117,9,44,23,"gato",33,false,"y"]
+let inicio = ["unacadena",3,9,1,10,500,1,10,"a",true];  
+let clean =[];
+
+for (let i = 0; i < inicio.length; i++) {
+    //console.log(typeof inicio[i]);
+    if(typeof inicio[i] === "number"){
+        clean.push(inicio[i]);
+      
+    }    
+}
+console.log(clean)
+
+function ordenar(){
+
+    for(let e = 0; e < clean.length; e++){
+        for(let i = 0; i < clean.length; i++){
+            if(clean[e] <= clean[i]){
+                let temporal = clean[e]
+                clean[e] = clean[i];
+                clean[i] = temporal
+            }
+        }
+    }
+    console.log(clean)
+}
+ordenar()
+    </script>
+    </head>
+<body>    
+</body>
+</html>
+
+

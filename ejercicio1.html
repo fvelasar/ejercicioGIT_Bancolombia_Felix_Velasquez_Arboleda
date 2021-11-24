@@ -1,0 +1,31 @@
+<html>  
+    <head>
+    <script>
+        
+   let numeroDeElementos = 7;
+
+   function fibonacci(numero){
+    let i = 2;
+    let numeros = [0,1];
+
+    if (i <= 1){
+        return numeros;
+        }
+      
+    for (let i = 2; i < numero; i++) {
+            numeros[i] = numeros[i - 2] + numeros[i - 1];         
+        }
+        return numeros;
+    }
+    console.log(fibonacci(numeroDeElementos));
+ 
+    </script>
+
+    </head>
+<body>    
+
+</body>
+</html>
+
+
+
