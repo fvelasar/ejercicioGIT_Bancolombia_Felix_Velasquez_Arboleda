@@ -1,0 +1,203 @@
+<html>  
+    <head>
+    <script>
+////punto 1///
+/*
+var numero1 = 5;
+var numero2 = 8;
+if(numero1 <= numero2) {
+    console.log("numero1 no es mayor que numero2");
+    }
+if(numero2 >= 0) {
+   
+console.log("numero2 es positivo");
+}
+if(numero1 < 0 || numero1 != 0 ) {
+console.log("numero1 es negativo o distinto de cero");
+}
+if(++numero1 < numero2) {
+console.log("Incrementar en 1 unidad el valor de numero1 no lo hace mayor oigual que numero2");
+}
+*/
+
+/// punto 2////
+/*
+factorial = 7;
+let temp = 1;
+let otra = 0;
+for(let i = 1;i <= factorial; i++){
+    temp *= i;
+    otra = temp + temp;  
+}
+console.log(temp);
+*/
+
+////punto 3///
+/*
+function Par(value){
+    if (value %2 == 0) {
+      console.log ("El número "+ value +" es par");
+    
+    } else {
+        console.log("El número "+ value +" es impar");
+    }
+}
+
+Par(13);
+*/
+
+ ///punto 4///
+/*
+function palindromo(cadena) {
+
+var resultado = "La cadena \""+cadena+"\" \n";
+
+var cadenaPrincipal = cadena.toUpperCase();
+
+var letrasEspacios = cadenaPrincipal.split("");
+
+var eliminarEspacios = "";
+for(i in textoEspacios) {
+  if(letrasEspacios[i] != " ") {
+    eliminarEspacios += textoEspacios[i];
+  }
+}
+
+var letras = eliminarEspacios.split("");
+var letrasReves = eliminarEspacios.split("").reverse();
+
+var iguales = true;
+for(i in letras) {
+  if(letras[i] == letrasReves[i]) {   
+  }
+  else {    
+    iguales = false;
+  }
+}
+
+if(iguales) {
+  resultado += " es palíndromo";
+}
+else {
+  resultado += " no es n palíndromo";}
+
+return resultado;
+}
+
+console.log(palindromo("La ruta nos aporto otro paso natural"));
+console.log(palindromo("Esta frase no se parece a ningun palindromo"));
+*/
+
+/// punto bonus///
+
+/*
+
+function combinacionLetras(letra) {
+    if (typeof letra != 'string') {      
+    }
+
+    if (letra.length <= 2) {
+        return letra.length === 2 ? [letra, letra[1] + letra[0]] : [letra];
+    }
+
+    return letra.split('')
+        .reduce((a, c, i) => 
+            a.concat(combinacionLetras(letra.slice(0, i) + letra.slice(i + 1))
+            .map(v => c + v))
+        , []);
+}
+
+    console.log(combinacionLetras('paz'));
+  */
+
+/// punto 5 ////
+
+
+
+class Persona {
+   nombre;
+    edad
+    constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    obtDetalles(nombre, edad) {
+        console.log(" mi nombre es" + this.nombre);
+        console.log(" mi edad es" + this.edad);
+
+    }
+         
+}
+class Estudiante extends Persona {
+    calificación;    
+
+    obtDetalles() {
+      return super.obtDetalles + calificación;
+
+    } 
+  
+}
+
+
+class Profesor extends Persona {
+    constructor(asignatura, nivel) {
+        super(asignatura, nivel);
+        this.nivel = básico
+        this.asignatura = JS
+    }
+    obtDetalles() {
+      return super.obtDetalles + nombre + edad + asignatura *nivel;
+
+    } 
+    
+}
+
+
+class  Grupo extends Profesor {promedio;estudiantes
+    #estudiantes=[];
+    constructor(estudiantes) {
+        for (let j = 0; j < estudiantes.length; j++) {
+            this.#estudiantes.push(estudiantes[j])
+        }
+    }
+
+    calificar(estudiantes){
+
+        this.#estudiantes.push(estudiantes);
+    }
+
+    promedio(id){
+       
+    }
+
+    obtdetalles(){
+        console.log(this.#estudiantes);
+    }
+
+    
+}
+
+const estudiantes = new Array('carlos 31', 'fredy 23 ','luisa 28',' gladys 45', 'clara 21', 'alejandra 18' );
+
+
+let profesor = new Object();
+profesor.nombre = '';
+profesor.edad = '';
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+    </head>
+<body>  
+    
+</body>
+</html>
